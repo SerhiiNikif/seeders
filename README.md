@@ -55,4 +55,3 @@ npm run dev
 
 Now, you are ready to test all APIs.
 Just simply open your browser http://localhost:3000.
-"# seeders" 

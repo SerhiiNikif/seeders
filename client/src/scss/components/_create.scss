@@ -1,0 +1,35 @@
+.create {
+  &__container {
+    width: 350px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-right: 100px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    input {
+      flex: 1;
+      min-width: 100%;
+      margin: 0px 10px 10px 0px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 12px 20px;
+      border-radius: 10px;
+
+      &:focus {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+@import "./variables";
+@import "libs/normalize";
+
+@import "components/all";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(100vw - 100px);
+  background-color: #fff;
+  margin: 3vh auto;
+  border-radius: 10px;
+  max-width: 1400px;
+}
+
+.not-authorized {
+  width: 430px;
+  font-size: 14px;
+  border: none;
+  padding: 8px 20px;
+  background-color: #f59e0b;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.no-users {
+  width: 159px;
+  font-size: 14px;
+  border: none;
+  padding: 8px 20px;
+  background-color: #f59e0b;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+}
+
+.warning {
+  color: #f59e0b;
+}
+
+.auth {
+  margin-bottom: 10px;
+  
+  button {
+    width: 100px;
+    margin-right: 10px;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+.admin {
+  margin-bottom: 20px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+}
+
+.users {
+  .show-more {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .generate-users {
+    width: 150px;
+    margin-right: 10px;
+  }
+
+  .delete-users {
+    width: 150px;
+    margin-right: 10px;
+  }
+
+  &_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 11px;
+  }
+
+  &__block {
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 12px 20px;
+
+    img {
+      width: 70px;
+    }
+  }
+
+}
